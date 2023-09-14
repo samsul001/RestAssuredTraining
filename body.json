@@ -1,0 +1,9 @@
+{
+    "name":"Alam",
+    "location": "Spain",
+    "phone":"90877633",
+    "courses":[
+        "MachineLearning",
+        "RPA"
+    ]
+}
