@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="day4.parsingJSONResponseData">
+      <class name="day5.FileUpload">
         <methods>
-          <include name="totalSumOfAllBooks"/>
+          <include name="testMultipleFileUpload2"/>
         </methods>
-      </class> <!-- day4.parsingJSONResponseData -->
+      </class> <!-- day5.FileUpload -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -11,7 +11,7 @@ import static io.restassured.matcher.RestAssuredMatchers.*;
 import static org.hamcrest.Matchers.*;
 
 import org.json.JSONObject;
-
+//https://reqres.in/api/users?page=2
 public class parsingJSONResponseData {
 
 	//@Test
@@ -29,7 +29,8 @@ public class parsingJSONResponseData {
 	
 	//@Test
 	void testJsonResponse2() {
-		//Approach 2
+		//Approach 2. 
+		// jsonPath().get() => this methods returns a particular field from a Json response in Object data type.
 		Response res =
 		given()
 			.contentType(ContentType.JSON)
