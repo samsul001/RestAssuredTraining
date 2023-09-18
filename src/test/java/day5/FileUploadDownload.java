@@ -77,8 +77,7 @@ public class FileUploadDownload {
 			.statusCode(200)
 			.body("[0].fileName", equalTo("Test1.txt"))
 			.body("[1].fileName", equalTo("Test2.txt"))
-			.log().all();
-		
+			.log().all();		
 	}
 	
 	// File Download

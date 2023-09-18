@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="day5.FileUpload">
+      <class name="day7.AuthenticationAuthorization">
         <methods>
-          <include name="testMultipleFileUpload2"/>
+          <include name="testAPIKeyAuth"/>
         </methods>
-      </class> <!-- day5.FileUpload -->
+      </class> <!-- day7.AuthenticationAuthorization -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
