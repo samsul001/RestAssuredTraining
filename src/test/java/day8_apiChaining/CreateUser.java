@@ -1,4 +1,4 @@
-package day8;
+package day8_apiChaining;
 
 import org.json.JSONObject;
 import org.testng.ITestContext;
@@ -19,22 +19,23 @@ public class CreateUser {
 	@Test
 	void createTest(ITestContext context) {
 		Faker faker = new Faker();
-		JSONObject data = new JSONObject();
-		
-		String bearerToken = "711ecab7364c6731b16c1cec3a943a5b774f5328b47b80a728d340c29e60a777";
+		JSONObject data = new JSONObject();		
 		
 		data.put("name", faker.name().fullName());
 		data.put("gender", "Male");
 		data.put("email", faker.internet().emailAddress());
 		data.put("status", "inactive");
 		
+		String bearerToken = "711ecab7364c6731b16c1cec3a943a5b774f5328b47b80a728d340c29e60a777";
+		
 		int id=
 		given()
 			.headers("Authorization","Bearer "+bearerToken)
 			.body(data.toString())
 			.contentType(ContentType.JSON)
+			//.contentType("application/json")
 		.when()
-			.get("https://gorest.co.in/public/v2/users")
+			.post("https://gorest.co.in/public/v2/users")
 			.jsonPath().getInt("id");
 		context.getSuite().setAttribute("user_id", id);
 	}

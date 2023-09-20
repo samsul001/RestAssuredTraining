@@ -1,4 +1,4 @@
-package day8;
+package day8_apiChaining;
 
 import static io.restassured.RestAssured.given;
 

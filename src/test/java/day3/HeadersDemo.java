@@ -20,6 +20,7 @@ public class HeadersDemo {
 			//Server (Which server we are getting this response)
 			//Content-Encoding.
 	// Header values are always same.
+	// When contentType (application/json) is sent as part of the header, it will be speiced like (application.json) else we can use usual format
 
 	@Test(priority = 1)
 	void testHeaders1() {

@@ -1,4 +1,4 @@
-package day8;
+package day8_apiChaining;
 
 import org.json.JSONObject;
 import org.testng.ITestContext;
